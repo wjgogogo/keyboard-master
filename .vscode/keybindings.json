@@ -1,0 +1,372 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+  // ============================================================================
+  // 全局设置 - Global Settings
+  // ============================================================================
+  {
+    "command": "workbench.action.openGlobalKeybindings",
+    "key": "cmd+k cmd+s"
+  },
+  {
+    "command": "workbench.action.openGlobalKeybindingsFile",
+    "key": "cmd+k cmd+s",
+    "when": "inKeybindings"
+  },
+  {
+    "command": "workbench.action.openSettings",
+    "key": "cmd+,"
+  },
+  {
+    "command": "workbench.action.openSettingsJson",
+    "key": "cmd+,",
+    "when": "inSettingsEditor"
+  },
+
+  // ============================================================================
+  // 编辑器操作 - Editor Actions
+  // ============================================================================
+  {
+    "command": "editor.action.deleteLines",
+    "key": "cmd+backspace",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "command": "editor.action.smartSelect.expand",
+    "key": "alt+=",
+    "when": "editorTextFocus"
+  },
+  {
+    "command": "editor.action.smartSelect.shrink",
+    "key": "alt+-",
+    "when": "editorTextFocus"
+  },
+
+  // ============================================================================
+  // 工作台导航 - Workbench Navigation
+  // ============================================================================
+  {
+    "command": "workbench.action.splitEditor",
+    "key": "ctrl+shift+alt+cmd+\\"
+  },
+  {
+    "command": "workbench.action.navigateBackInEditLocations",
+    "key": "ctrl+shift+-",
+    "when": "canNavigateBackInEditLocations"
+  },
+  {
+    "command": "workbench.action.navigateForwardInEditLocations",
+    "key": "ctrl+shift+=",
+    "when": "canNavigateForwardInEditLocations"
+  },
+  {
+    "command": "workbench.action.navigateForward",
+    "key": "ctrl+=",
+    "when": "canNavigateForward"
+  },
+  {
+    "command": "workbench.action.navigateBack",
+    "key": "ctrl+-",
+    "when": "canNavigateBack"
+  },
+  {
+    "command": "workbench.action.increaseViewSize",
+    "key": "ctrl+alt+cmd+="
+  },
+  {
+    "command": "workbench.action.decreaseViewSize",
+    "key": "ctrl+alt+cmd+-"
+  },
+  {
+    "key": "cmd+e",
+    "command": "workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled && !filesExplorerFocus"
+  },
+  {
+    "key": "cmd+e",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "filesExplorerFocus"
+  },
+
+  // ============================================================================
+  // 文件操作 - File Operations
+  // ============================================================================
+  {
+    "command": "explorer.newFile",
+    "key": "a",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "command": "explorer.newFolder",
+    "key": "f",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "command": "renameFile",
+    "key": "r",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "command": "filesExplorer.copy",
+    "key": "y",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "command": "filesExplorer.cut",
+    "key": "x",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "command": "filesExplorer.paste",
+    "key": "p",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "command": "deleteFile",
+    "key": "d",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  // {
+  //   "command": "workbench.files.action.showActiveFileInExplorer",
+  //   "key": "shift+cmd+r"
+  // },
+  {
+    "command": "copyRelativeFilePath",
+    "key": "ctrl+shift+alt+cmd+c"
+  },
+  {
+    "command": "workbench.files.action.collapseExplorerFolders",
+    "key": "z z",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+
+  // ============================================================================
+  // 终端操作 - Terminal Operations
+  // ============================================================================
+  {
+    "command": "workbench.action.terminal.toggleTerminal",
+    "key": "ctrl+\\",
+    "when": "terminal.active"
+  },
+  {
+    "command": "workbench.action.terminal.new",
+    "key": "ctrl+shift+\\",
+    "when": "terminal.active"
+  },
+  {
+    "command": "workbench.action.terminal.kill",
+    "key": "cmd+w",
+    "when": "terminal.visible && terminalFocus"
+  },
+  {
+    "command": "workbench.action.terminal.split",
+    "key": "ctrl+shift+alt+cmd+\\",
+    "when": "terminalFocus"
+  },
+  {
+    "command": "workbench.action.toggleMaximizedPanel",
+    "key": "ctrl+m",
+    "when": "terminalFocus"
+  },
+
+  // ============================================================================
+  // 调试相关 - Debug Operations
+  // ============================================================================
+  {
+    "command": "workbench.action.debug.stepOver",
+    "key": "f2",
+    "when": "debugState == 'stopped'"
+  },
+  {
+    "command": "workbench.action.debug.stepInto",
+    "key": "f3",
+    "when": "inDebugMode"
+  },
+  {
+    "command": "workbench.action.debug.stepOut",
+    "key": "f4",
+    "when": "debugState == 'stopped'"
+  },
+
+  // ============================================================================
+  // 搜索相关 - Search Operations
+  // ============================================================================
+  {
+    "command": "search.action.focusSearchList",
+    "key": "tab",
+    "when": "searchViewletFocus"
+  },
+  {
+    "args": {
+      "commands": [
+        "search.focus.previousInputBox",
+        "search.focus.previousInputBox",
+        "search.focus.previousInputBox",
+        "search.focus.previousInputBox"
+      ]
+    },
+    "command": "runCommands",
+    "key": "shift+tab",
+    "when": "hasSearchResult && searchViewletFocus"
+  },
+
+  // ============================================================================
+  // Git 相关 - Git Operations
+  // ============================================================================
+  {
+    "key": "cmd+o",
+    "command": "runCommands",
+    "args": {
+      "commands": ["git.openFile", "gitlens.openWorkingFile"]
+    },
+    "when": "(resourceScheme =='gitlens' || resourceScheme == 'git' || scmProvider == 'git') && activeEditor != 'multiDiffEditor'"
+  },
+  {
+    "key": "cmd+k cmd+d",
+    "command": "git.closeAllDiffEditors"
+  },
+
+  // ============================================================================
+  // 扩展功能 - Extension Features
+  // ============================================================================
+  {
+    "key": "j",
+    "command": "editor.action.scrollDownHover",
+    "when": "editorHoverFocused"
+  },
+  {
+    "key": "k",
+    "command": "editor.action.scrollUpHover",
+    "when": "editorHoverFocused"
+  },
+  {
+    "key": "h",
+    "command": "editor.action.scrollLeftHover",
+    "when": "editorHoverFocused"
+  },
+  {
+    "key": "l",
+    "command": "editor.action.scrollRightHover",
+    "when": "editorHoverFocused"
+  },
+  {
+    "command": "extension.changeCase.commands",
+    "key": "ctrl+shift+alt+cmd+u"
+  },
+  {
+    "command": "turboConsoleLog.displayLogMessage",
+    "key": "ctrl+i",
+    "when": "editorLangId =~ /^javascript$|^javascriptreact$|^typescript$|^typescriptreact$/"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+r",
+    "command": "surround.with",
+    "when": "editorHasSelection"
+  },
+  {
+    "command": "bookmarks.toggleLabeled",
+    "key": "ctrl+shift+alt+cmd+b",
+    "when": "bookmarksExplorer.active"
+  },
+  {
+    "command": "bookmarksExplorer.focus",
+    "key": "shift+cmd+b",
+    "when": "bookmarksExplorer.active"
+  },
+  // ============================================================================
+  // 禁用设置 - Disabled Settings
+  // ============================================================================
+  {
+    "command": "-workbench.action.closeWindow",
+    "key": "cmd+w",
+    "when": "!editorIsOpen && !multipleEditorGroups"
+  },
+  {
+    "command": "-find-test-file.jumpToTest",
+    "key": "shift+cmd+t",
+    "when": "resourceExtname =~ /.[jt]sx?/ && resourceExtname =~ /.[jt]sx?/"
+  },
+  {
+    "command": "-find-test-file.createTestFile",
+    "key": "alt+cmd+t",
+    "when": "config.findTestFile.createIfNotFind.enable && resourceExtname =~ /.[jt]sx?$/"
+  },
+  {
+    "key": "cmd+o",
+    "command": "-workbench.action.files.openLocalFileFolder",
+    "when": "remoteFileDialogVisible"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "-extension.vim_ctrl+g",
+    "when": "editorTextFocus && vim.active && vim.use<C-g> && !inDebugRepl"
+  },
+  {
+    "key": "alt+cmd+down",
+    "command": "-extension.vim_cmd+alt+down",
+    "when": "editorTextFocus && vim.active && !inDebugRepl"
+  },
+  {
+    "key": "alt+cmd+up",
+    "command": "-extension.vim_cmd+alt+up",
+    "when": "editorTextFocus && vim.active && !inDebugRepl"
+  },
+  {
+    "key": "cmd+k cmd+d",
+    "command": "-editor.action.moveSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+t",
+    "command": "-workbench.action.showAllSymbols"
+  },
+  {
+    "key": "f8",
+    "command": "editor.action.marker.next",
+    "when": "editorFocus"
+  },
+  {
+    "key": "alt+f8",
+    "command": "-editor.action.marker.next",
+    "when": "editorFocus"
+  },
+  {
+    "key": "alt+f8",
+    "command": "editor.action.marker.nextInFiles",
+    "when": "editorFocus"
+  },
+  {
+    "key": "f8",
+    "command": "-editor.action.marker.nextInFiles",
+    "when": "editorFocus"
+  },
+  {
+    "key": "shift+f8",
+    "command": "editor.action.marker.prev",
+    "when": "editorFocus"
+  },
+  {
+    "key": "shift+alt+f8",
+    "command": "-editor.action.marker.prev",
+    "when": "editorFocus"
+  },
+  {
+    "key": "shift+alt+f8",
+    "command": "editor.action.marker.prevInFiles",
+    "when": "editorFocus"
+  },
+  {
+    "key": "shift+f8",
+    "command": "-editor.action.marker.prevInFiles",
+    "when": "editorFocus"
+  },
+  {
+    "key": "shift+cmd+c",
+    "command": "-workbench.action.terminal.openNativeConsole",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "cmd+o",
+    "command": "-workbench.action.files.openFileFolder",
+    "when": "isMacNative && openFolderWorkspaceSupport"
+  }
+]

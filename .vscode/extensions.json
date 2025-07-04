@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "vscodevim.vim",
+    "yatki.vscode-surround",
+    "silesky.toggle-boolean",
+    "eamodio.gitlens",
+    "alefragnani.Bookmarks",
+    "esbenp.prettier-vscode"
+  ]
+}

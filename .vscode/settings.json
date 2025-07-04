@@ -1,0 +1,309 @@
+{
+  "vim.argumentObjectClosingDelimiters": [")", "]", "}"],
+  "vim.argumentObjectOpeningDelimiters": ["(", "[", "{"],
+  "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.ABC",
+  "vim.autoSwitchInputMethod.enable": true,
+  "vim.autoSwitchInputMethod.obtainIMCmd": "/opt/homebrew/bin/im-select",
+  "vim.autoSwitchInputMethod.switchIMCmd": "/opt/homebrew/bin/im-select {im}",
+  "vim.camelCaseMotion.enable": true,
+  "vim.changeWordIncludesWhitespace": true,
+  "vim.easymotion": true,
+  "vim.enableNeovim": false,
+  "vim.highlightedyank.color": "rgba(250, 97, 89, 0.7)",
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.textColor": "white",
+  "vim.hlsearch": true,
+  "vim.ignorecase": true,
+  "vim.insertModeKeyBindingsNonRecursive": [
+    {
+      "after": ["<Esc>"],
+      "before": ["j", "j"]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "after": ["s"],
+      "before": ["f"]
+    },
+    {
+      "after": ["S"],
+      "before": ["F"]
+    },
+    {
+      "after": ["c", "l"],
+      "before": ["s"]
+    },
+    {
+      "after": ["^", "C"],
+      "before": ["S"]
+    },
+    {
+      "after": ["leader", "leader", "2", "s"],
+      "before": ["leader", "s"]
+    },
+    {
+      "after": ["leader", "leader", "2", "f"],
+      "before": ["leader", "f"]
+    },
+    {
+      "after": ["leader", "leader", "2", "t"],
+      "before": ["leader", "t"]
+    },
+    {
+      "after": ["^"],
+      "before": ["H"]
+    },
+    {
+      "after": ["$"],
+      "before": ["L"]
+    },
+    {
+      "after": ["5", "j"],
+      "before": ["J"]
+    },
+    {
+      "after": ["5", "k"],
+      "before": ["K"]
+    },
+    {
+      "before": ["<C-j>"],
+      "commands": ["editor.action.moveLinesDownAction"]
+    },
+    {
+      "before": ["<C-k>"],
+      "commands": ["editor.action.moveLinesUpAction"]
+    },
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    },
+    {
+      "before": ["z", "z"],
+      "commands": ["editor.toggleFold"]
+    },
+    {
+      "before": [":"],
+      "commands": ["workbench.action.showCommands"],
+      "silent": true
+    },
+    {
+      "before": ["leader", "i"],
+      "commands": ["extension.toggleBool"]
+    },
+    // splits
+    {
+      "before": ["leader", "v"],
+      "commands": ["workbench.action.splitEditor"]
+    },
+    // panes
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["leader", "k"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    },
+    {
+      "before": ["g", "d"],
+      "commands": ["editor.action.revealDefinition"]
+    },
+    {
+      "before": ["g", "p", "d"],
+      "commands": ["editor.action.peekDefinition"]
+    },
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["g", "p", "i"],
+      "commands": ["editor.action.peekImplementation"]
+    },
+    {
+      "before": ["g", "t"],
+      "commands": ["editor.action.goToTypeDefinition"]
+    },
+    {
+      "before": ["g", "p", "t"],
+      "commands": ["editor.action.peekTypeDefinition"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["references-view.findReferences"]
+    },
+    {
+      "before": ["g", "p", "r"],
+      "commands": ["editor.action.referenceSearch.trigger"]
+    },
+    {
+      "before": ["g", "q"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["g", "s"],
+      "commands": ["editor.action.triggerSuggest"]
+    },
+    {
+      "before": ["g", "b"],
+      "commands": ["editor.action.addSelectionToNextFindMatch"]
+    },
+    {
+      "before": ["g", "B"],
+      "commands": ["editor.action.selectHighlights"]
+    },
+    {
+      "before": ["<leader>", "m"],
+      "commands": ["bookmarks.toggle"]
+    }
+  ],
+  "vim.operatorPendingModeKeyBindingsNonRecursive": [
+    {
+      "after": ["z"],
+      "before": ["f"]
+    },
+    {
+      "after": ["Z"],
+      "before": ["F"]
+    },
+    {
+      "after": ["a", "I"],
+      "before": ["a", "i"]
+    },
+    {
+      "after": ["$"],
+      "before": ["L"]
+    },
+    {
+      "after": ["^"],
+      "before": ["H"]
+    },
+    {
+      "after": ["i", "("],
+      "before": ["("]
+    },
+    {
+      "after": ["i", "["],
+      "before": ["["]
+    },
+    {
+      "after": ["i", "{"],
+      "before": ["{"]
+    },
+    {
+      "after": ["a", "<"],
+      "before": ["<"]
+    },
+    {
+      "after": ["i", "\""],
+      "before": ["\""]
+    },
+    {
+      "after": ["i", "'"],
+      "before": ["'"]
+    },
+    {
+      "after": ["i", "`"],
+      "before": ["`"]
+    },
+    {
+      "after": ["i", "w"],
+      "before": ["w"]
+    }
+  ],
+  "vim.searchMatchTextColor": "white",
+  "vim.showMarksInGutter": true,
+  "vim.smartRelativeLine": true,
+  "vim.smartcase": true,
+  "vim.sneak": true,
+  "vim.sneakUseIgnorecaseAndSmartcase": true,
+  "vim.useCtrlKeys": true,
+  "vim.useSystemClipboard": true,
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "after": ["s"],
+      "before": ["f"]
+    },
+    {
+      "after": ["S"],
+      "before": ["F"]
+    },
+    {
+      "after": ["a", "I"],
+      "before": ["a", "i"]
+    },
+    {
+      "after": ["leader", "leader", "2", "s"],
+      "before": ["leader", "s"]
+    },
+    {
+      "after": ["leader", "leader", "2", "f"],
+      "before": ["leader", "f"]
+    },
+    {
+      "after": ["leader", "leader", "2", "t"],
+      "before": ["leader", "t"]
+    },
+    {
+      "after": ["^"],
+      "before": ["H"]
+    },
+    {
+      "after": ["$"],
+      "before": ["L"]
+    },
+    {
+      "after": ["5", "j"],
+      "before": ["J"]
+    },
+    {
+      "after": ["5", "k"],
+      "before": ["K"]
+    },
+    {
+      "before": ["<C-j>"],
+      "commands": ["editor.action.moveLinesDownAction"]
+    },
+    {
+      "before": ["<C-k>"],
+      "commands": ["editor.action.moveLinesUpAction"]
+    },
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    },
+    {
+      "before": ["z", "z"],
+      "commands": ["editor.toggleFold"]
+    },
+    {
+      "before": ["r"],
+      "commands": ["surround.with"]
+    },
+    {
+      "before": ["g", "q"],
+      "commands": ["editor.action.quickFix"]
+    }
+  ],
+  "vim.visualstar": false,
+}
